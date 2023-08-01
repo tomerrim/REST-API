@@ -1,6 +1,9 @@
 import crypto from "crypto";
+import dotenv from "dotenv";
 
-const SECRET = "TOMER_REST_API";
+dotenv.config()
+
+const SECRET = process.env.SECRET;
 
 
 export const random = () => crypto.randomBytes(128).toString("base64");
