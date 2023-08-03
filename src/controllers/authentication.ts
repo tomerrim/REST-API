@@ -1,5 +1,5 @@
 import express from "express";
-import { createUser, getUserByEmail } from "./userController";
+import { createUser, getUserByEmail } from "./userHelpers";
 import { authentication, random } from "../helpers";
 import dotenv from "dotenv";
 
